@@ -19,10 +19,10 @@ Ruby2.4
 
 Fixnum range
 
-- 32bit CRuby (ILP32) -2**30 .. 2**30 - 1
-- 64bit CRuby (LLP64) -2**30 .. 2**30 - 1 ※windows
-- 64bit CRuby (LP64)  -2**62 .. 2**62 - 1
-- JRuby               -2**63 .. 2**63 - 1
+- 32bit CRuby (ILP32) `-2**30 .. 2**30 - 1`
+- 64bit CRuby (LLP64) `-2**30 .. 2**30 - 1` ※windows
+- 64bit CRuby (LP64)  `-2**62 .. 2**62 - 1`
+- JRuby               `-2**63 .. 2**63 - 1`
 
 
 Ruby specification

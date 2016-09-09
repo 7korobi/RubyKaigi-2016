@@ -31,15 +31,14 @@ Ropes (JRuby + Truffle)
 
 
 Concatenation
+```
   x = 'Hello'
   y = 'World'
   z = x + y
+```
 
-- RString 
-- O(n) operation
-
-- Rope
-- O(1) operation
+- RString  O(n) operation
+- Rope     O(1) operation
 
 
 String#+   40倍(MRI)〜130倍(JRuby)早い
@@ -47,16 +46,18 @@ String#<<
 
 
 Substring
+```
   x = "Hello"
   y = x[1..3]
-
+```
 
 Multiplication
+```
   x = 'abc'
   y = x * 3
+```
 
-- Rope
-- O(1) : RepeatingRope(times: 3)
+- Rope   O(1) : RepeatingRope(times: 3)
 
 
 String Length
