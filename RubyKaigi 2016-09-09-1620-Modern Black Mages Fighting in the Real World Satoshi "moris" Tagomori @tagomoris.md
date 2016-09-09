@@ -6,5 +6,8 @@ Satoshi "moris" Tagomori @tagomoris
 LINKS
 =====
 
+- http://togetter.com/li/1022364
+
 
 -----
+
