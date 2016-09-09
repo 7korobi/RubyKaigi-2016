@@ -12,7 +12,7 @@ Jruby & truffle
 
 一方だけがクリティカルセクションを走るような２つのスレッド。
 
-##### Performance
+### Performance
 
 並列性。
 

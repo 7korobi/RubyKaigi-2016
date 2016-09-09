@@ -7,7 +7,7 @@ https://speakerdeck.com/m_seki/druby2016
 http://docs.ruby-lang.org/ja/2.2.0/library/drb.html
 ```
 
-##### dRubyの生い立ち
+### dRubyの生い立ち
 
 1999年 最初のコードはTシャツに書けるサイズ。
 2000年 perl/rubyカンファレンスで、同じ会場で同じ発表をした。
@@ -30,19 +30,23 @@ RubyなのだからRuby Objectをあつかいたい。
 
 20世紀には、IDLを定義する言語が多かった。
 サーバーとクライアントの立場が入れ替わります。
-- kvs['outlet'] = $stdout 
-- $stdout オブジェクトを公開する。ので、$stdoutのメソッドをコールできる。
+```
+ kvs['outlet'] = $stdout
+ $stdout
+```
+
+オブジェクトを公開する。ので、$stdoutのメソッドをコールできる。
 
 - dump可能 複製
 - dump不能 Proxy
 
 
+```
 Marshal.dump
-- kvs['outlet'] = $stdout 
-- = kvs.send(:[], 'outlet', $stdout)
-'outlet' 複製
+- kvs['outlet'] = $stdout
+- = kvs.send(:[], 'outlet', $stdout)  # 'outlet' 複製
 $stdout  Proxy
-
+```
 
 Queue, Mutex, Monitor, Thread同期メカニズムがそのまま使える。
 
@@ -53,7 +57,7 @@ dRubyが向いていること
 - ex. prototyping Twitter. ( dRuby/Rinda だった。)
 
 
-これから
+#### これから
 
 - 初期の実装に戻したいところがいくつか
 -- ACL, insecure_method

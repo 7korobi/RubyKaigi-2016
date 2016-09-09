@@ -11,7 +11,7 @@ http://memo.goodpatch.co/2016/09/rubykaigi-2016-report-ruby3-typing/
 Future of (Dynamic) Typing?
 
 
-##### 脳の負担を下げたい。
+### 脳の負担を下げたい。
 
 型に期待するもの
 - 血液型 A,B,AB,O - 共通の性質
@@ -32,7 +32,7 @@ Go interface is far better.
 - エラーの発見が遅くなる
 
 
-##### どうするとよいのか。(concept)
+### どうするとよいのか。(concept)
 
 ふるまいによって、型を推論する。
 - 80%でも0%よりよい。
