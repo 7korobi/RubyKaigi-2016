@@ -16,6 +16,8 @@ C ext.
 
 今は安全なバージョンのTypedData_Wrap_Structがあるから、拡張ライブラリを書くときはData_Wrap_Structは避けるのじゃよ #rubykaigiA
 
+SWIGが生成してくれるやつはAPIとしては不十分だから、結局低水準操作はお任せできるという程度の意味で、高水準の対象言語らしいAPIでラップしてやる必要があることが多い気がする #rubykaigiA
+
 ### binding の作り方
 
 - `Ext` Extension library (inpl by hand)
