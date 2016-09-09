@@ -24,6 +24,8 @@ C ext.
 - `GI` GObject Introspection (inpl by Generate)
 
 
+### GIのつかいかた
+
 ``` ruby
 require "gi"
 
