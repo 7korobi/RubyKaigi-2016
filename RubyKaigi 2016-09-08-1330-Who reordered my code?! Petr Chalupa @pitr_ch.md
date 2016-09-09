@@ -2,10 +2,13 @@
 ```
 Who reordered my code?!
 Petr Chalupa @pitr_ch
-
-http://togetter.com/li/1021946
-https://github.com/jruby/jruby/wiki/Truffle
 ```
+
+LINKS
+=======
+
+- http://togetter.com/li/1021946
+- https://github.com/jruby/jruby/wiki/Truffle
 
 
 Jruby & truffle

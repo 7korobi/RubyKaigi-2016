@@ -2,13 +2,17 @@
 ```
 A Tale of Two String Representations
 Kevin Menard @nirvdrum
-
-http://togetter.com/li/1021993?utm_source=dlvr.it&utm_medium=twitter
-https://github.com/jruby/jruby/wiki/Truffle
-https://github.com/jruby/jruby/tree/master/truffle
-http://www.spinute.org/ruby/gsoc2016/japanese.html
-https://github.com/spinute/CRope/blob/master/src/rope.c#L56-L59
 ```
+
+LINKS
+=======
+
+- http://togetter.com/li/1021993?utm_source=dlvr.it&utm_medium=twitter
+- https://github.com/jruby/jruby/wiki/Truffle
+- https://github.com/jruby/jruby/tree/master/truffle
+- http://www.spinute.org/ruby/gsoc2016/japanese.html
+- https://github.com/spinute/CRope/blob/master/src/rope.c#L56-L59
+
 
 
 'Hello'

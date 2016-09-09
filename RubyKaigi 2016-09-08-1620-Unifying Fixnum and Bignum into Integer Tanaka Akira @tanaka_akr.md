@@ -2,10 +2,14 @@
 ```
 Unifying Fixnum and Bignum into Integer
 Tanaka Akira @tanaka_akr
-
-http://togetter.com/li/1022003
-http://www.a-k-r.org/d/2016-09.html#a2016_09_08_1
 ```
+
+LINKS
+=======
+
+- http://togetter.com/li/1022003
+- http://www.a-k-r.org/d/2016-09.html#a2016_09_08_1
+
 
 Ruby2.4
 

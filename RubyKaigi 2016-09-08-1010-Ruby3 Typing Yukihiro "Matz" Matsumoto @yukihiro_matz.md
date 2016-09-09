@@ -2,10 +2,14 @@
 ```
 Ruby3 Typing
 Yukihiro "Matz" Matsumoto @yukihiro_matz
-
-http://togetter.com/li/1021897
-http://memo.goodpatch.co/2016/09/rubykaigi-2016-report-ruby3-typing/
 ```
+
+LINKS
+=======
+
+- http://togetter.com/li/1021897
+- http://memo.goodpatch.co/2016/09/rubykaigi-2016-report-ruby3-typing/
+
 
 静的型、動的型の振り子のような関係。
 Future of (Dynamic) Typing?

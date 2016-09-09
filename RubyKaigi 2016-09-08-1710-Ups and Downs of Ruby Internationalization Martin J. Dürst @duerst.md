@@ -2,12 +2,16 @@
 ```
 Ups and Downs of Ruby Internationalization
 Martin J. Dürst @duerst
-
-http://ref.xaio.jp/ruby/classes/string/casecmp
-https://en.wikipedia.org/wiki/Latin_script_in_Unicode
-http://www.sw.it.aoyama.ac.jp/2016/pub/RubyKaigi/
-http://unicode.org/Public/UCD/latest/ucd/CaseFolding.txt
 ```
+
+LINKS
+=======
+
+- http://ref.xaio.jp/ruby/classes/string/casecmp
+- https://en.wikipedia.org/wiki/Latin_script_in_Unicode
+- http://www.sw.it.aoyama.ac.jp/2016/pub/RubyKaigi/
+- http://unicode.org/Public/UCD/latest/ucd/CaseFolding.txt
+
 
 ラテン拡張、ウムラウト、合字に対する文字列変換メソッドのあるべき挙動。
 （と、実装の難しさ）

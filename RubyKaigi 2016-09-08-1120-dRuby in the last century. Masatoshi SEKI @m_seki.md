@@ -2,10 +2,14 @@
 ```
 dRuby in the last century.
 Masatoshi SEKI @m_seki
-
-https://speakerdeck.com/m_seki/druby2016
-http://docs.ruby-lang.org/ja/2.2.0/library/drb.html
 ```
+
+LINKS
+=======
+
+- https://speakerdeck.com/m_seki/druby2016
+- http://docs.ruby-lang.org/ja/2.2.0/library/drb.html
+
 
 ### dRubyの生い立ち
 
