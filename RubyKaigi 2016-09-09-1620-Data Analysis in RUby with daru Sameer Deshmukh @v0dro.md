@@ -8,7 +8,7 @@ LINKS
 
 @sciruby
 - http://sciruby.com/
-- http://www.sciruby.com/
+- https://try.jupyter.org/
 - https://github.com/v0dro/daru
 - https://github.com/symengine/symengine
 - https://github.com/clbustos/statsample
