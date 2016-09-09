@@ -6,6 +6,7 @@ Masahiro TANAKA @masa16tanaka
 LINKS
 =====
 
+- http://www.hpcs.cs.tsukuba.ac.jp/~tanaka/publications/open/HPC-135-14.pdf
 - https://github.com/ruby-numo
 - https://github.com/masa16
 - http://docs.ruby-lang.org/ja/2.3.0/library/rake.html
