@@ -61,7 +61,7 @@ dRubyが向いていること
 - ex. prototyping Twitter. ( dRuby/Rinda だった。)
 
 
-#### これから
+### これから
 
 - 初期の実装に戻したいところがいくつか
 -- ACL, insecure_method
