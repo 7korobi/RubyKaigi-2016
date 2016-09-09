@@ -13,8 +13,8 @@ LINKS
 - http://www.atdot.net/~ko1/activities/2016_rubykaigi.pdf
 
 
-### Why difficult multi-threads programing?
-
+Why difficult multi-threads programing?
+-----
 
 Ruby chose "safety/easily" approach
 
