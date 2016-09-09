@@ -7,9 +7,12 @@ Kenta Murata @mrkn
 LINKS
 =====
 
+- http://togetter.com/li/1022377
+- https://sciruby-slack.herokuapp.com/
+- http://www.s-itoc.jp/activity/research/ml/60
 - https://github.com/SciRuby/iruby
 - https://github.com/mrkn/enumerable-statistics
-- https://sciruby-slack.herokuapp.com/
+- https://github.com/mrkn/num_buffer
 - https://github.com/kei500/liblinear-ruby
 - https://github.com/febeling/rb-libsvm
 - 他にも...
@@ -20,7 +23,8 @@ LINKS
 - https://github.com/domitry/nyaplot
 - https://github.com/scikit-learn/scikit-learn
 - https://speakerdeck.com/smly/python-todetafen-xi-kontesutofalseshi-jian
-
+- https://github.com/zeromq/rbzmq
+- http://qiita.com/chezou/items/d090f26dcb31818d6964
 
 機械学習
 -----
@@ -51,6 +55,8 @@ Scikit-learn (python)
 Scipy stack のうえで動く。デファクト・スタンダード。
 
 この例えが良いかは分からないけど、Rubyの単体のgemとsklearnは、素のSinatraとRailsくらい違ってかなり便利なヘルパーがいっぱいいるんですよね。複数のアルゴリズムを容易に比較できたり、前処理からパイプラインでひとまとめにできたり #rubykaigiA
+
+JuliaはPython,Matlab,R,C++を同じREPLで言語またいでやり取りできるからなぁ。こういうbindingは好きなんですよね #rubykaigiA
 
 
 The Future of SciRuby in ML
