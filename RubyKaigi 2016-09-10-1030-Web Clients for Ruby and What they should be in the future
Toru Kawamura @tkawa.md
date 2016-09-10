@@ -6,6 +6,7 @@ Toru Kawamura @tkawa
 LINKS
 =====
 
+- http://togetter.com/li/1022628
 - https://sendagayarb.doorkeeper.jp
 - http://github.com/tkawa
 - https://github.com/lostisland/faraday

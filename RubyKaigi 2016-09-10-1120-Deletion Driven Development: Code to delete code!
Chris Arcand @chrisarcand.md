@@ -7,9 +7,11 @@ LINKS
 =====
 
 - Ruby Under a Microscope
-- gem ruby_parser
-- Racc
-- gem debride
+- https://github.com/seattlerb/debride
+- https://github.com/amatsuda/traceroute
+- https://tcopeland/olde_code_finder
+- https://joshuaclayton/unused
+- www.chrisarcand.com
 
 
 i ♡ DELETING CODE
@@ -26,8 +28,3 @@ i ♡ DELETING CODE
 
 - ruby-parser で呼び出し構造を解析する。
 
-
-Building the Dead Method finder
------
-
-- 
