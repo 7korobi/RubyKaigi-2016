@@ -6,6 +6,7 @@ Chris Arcand @chrisarcand
 LINKS
 =====
 
+- http://togetter.com/li/1022643
 - Ruby Under a Microscope
 - https://github.com/seattlerb/debride
 - https://github.com/amatsuda/traceroute

@@ -8,6 +8,7 @@ LINKS
 =======
 
 - https://speakerdeck.com/m_seki/druby2016
+- https://github.com/ruby/ruby/tree/trunk/lib/drb
 - http://docs.ruby-lang.org/ja/2.2.0/library/drb.html
 
 
