@@ -9,6 +9,7 @@ RubyKaigi2016で、JRubyのとっている手法について、Oracleの人か�
 -----
 
 - http://rubykaigi.org/2016/presentations/pitr_ch.html
+- http://rubykaigi.org/2016/presentations/anildigital.html
 - http://rubykaigi.org/2016/presentations/nirvdrum.html
 - http://rubykaigi.org/2015/presentations/nirvdrum.html
 - https://github.com/jruby/jruby/wiki/Truffle
