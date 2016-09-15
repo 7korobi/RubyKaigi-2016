@@ -17,7 +17,7 @@ RubyKaigi2016 で発表のあった、Rubyの現状と将来のバージョン�
 Ruby 2.3 (現状)
 =====
 
-- `String#upcase`,`String#downcase`,`String#casecmp` の取り扱い対象は、ASCII文字
+- `String#upcase`,`String#downcase`,`String#casecmp`,`String#capitalize` の取り扱い対象は、ASCII文字である
 - 動的再定義が可能な言語なので、最適化処理は行わない。
 - 整数は、値の範囲によって Fixnum, Bignum にわかれている。
 
