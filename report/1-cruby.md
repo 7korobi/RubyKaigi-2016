@@ -1,37 +1,75 @@
 Ruby コア機能の今後
 =====
 
+RubyKaigi2016 で発表のあった、Rubyの現状と将来のバージョンへの展望をまとめます。
+
+
+関連文書
+-----
+
+- http://rubykaigi.org/2016/presentations/yukihiro_matz.html
+  - http://memo.goodpatch.co/2016/09/rubykaigi-2016-report-ruby3-typing/ 
+- http://rubykaigi.org/2016/presentations/tanaka_akr.html
+- http://rubykaigi.org/2016/presentations/duerst.html
+
+
 
 Ruby 2.3 (現状)
 =====
+
+- `String#upcase`,`String#downcase`,`String#casecmp` の取り扱い対象は、ASCII文字
+- 動的再定義が可能な言語なので、最適化処理は行わない。
+- 整数は、値の範囲によって Fixnum, Bignum にわかれている。
+
+| version             | Fixnum 範囲                      | Bignum 範囲 |
+|:------------------- |:-------------------------------- | ----------- |
+| 32bit CRuby (ILP32) | `-2**30 .. 2**30 - 1`            | それ以外 |
+| 64bit CRuby (LLP64) | `-2**30 .. 2**30 - 1`  ※windows  | それ以外 |
+| 64bit CRuby (LP64)  | `-2**62 .. 2**62 - 1`            | それ以外 |
+| JRuby               | `-2**63 .. 2**63 - 1`            | それ以外 |
+
 
 
 Ruby 2.4 (next)
 =====
 
-- ラテン拡張や合字の文字列について、`.upcase`, `.downcase` などの処理に対応
+- ラテン拡張や合字(ligature)を含む文字列について、`String#upcase`,`String#downcase`,`String#casecmp` での処理に対応
 - Deoptimization
   - 事前最適化をおこない、最適化の前提が崩れたら破棄する。
   - 巨大なArrayの取り扱いで1000倍速くなるなど、一部の動作に大きな効果がある。
 - Integer <== Fixnum + Bignum
   - object.is_a?(Fixnum) などといった型チェックはできなくなる。
   - JRuby, 32bit CRuby, 64bit CRuby などでstringの範囲が処理系依存のため。
-  - http://www.a-k-r.org/pub/2016-09-08-rubykaigi-unified-integer.pdf
 
+
+ラテン拡張への文字列処理
+-----
+
+```
+'Résumé ĭñŧėřŋãţĳňőńæłĩżàťïōņ'.upcase # ⇒ 'RÉSUMÉ ĬÑŦĖŘŊÃŢĲŇŐŃÆŁĨŻÀŤÏŌŅ'
+'Юрий Соколов'.upcase                 # ⇒ 'ЮРИЙ СОКОЛОВ'
+'ß'.upcase                            # ⇒ 'SS' (German sz/sharp s)
+'ﬃ'.upcase                           # ⇒ "FFI" (ﬃ ligature)
+```
 
 deoptimization 最適化手法
 -----
 
-- Folding constants
-- 最適化可能なメソッドを `pure` とよぶ
+ここでは、最適化可能な式を `pure` とよぶ。
+pureの定義を外れた式は、最適化（による実行のスキップ）を伴ってしまうと動作がおかしくなってしまう。
+
+- `pure` の検査方法
   - ローカル変数以外を使うものは `not pure`
   - yield を使うものは `not pure`
   - C関数を呼ぶものは `not pure`
-- Eliminating send-ish instructions
-  - 戻り値を捨てているメソッドは最適化可能
-- Elimination of variable
-  - 一度も参照されていない変数代入は最適化可能
-  - pure メソッドのみを対象にする（binding hackを警戒）
+
+- 最適化方法
+  - Folding constants
+  - Eliminating send-ish instructions
+    - 戻り値を捨てているメソッドは最適化可能
+  - Elimination of variable
+    - 一度も参照されていない変数代入は最適化可能
+    - pure メソッドのみを対象にする（binding hackを警戒）
 
 
 
@@ -53,42 +91,3 @@ Ruby 3 (future)
   - DRY,Duck typing を前提に、型推論できる範囲にはサポートをしたい。
 
 
-
-参考文献
-=====
-
-
-☓動的型の欠点☓
------
-
-- ドキュメント性が低い（プログラマが型を書かないので）
-- カバレッジ
-- エラーの発見が遅くなる
-
-
-
-2016年の主要な言語
------
-
-- TypeScript (MS)
-- Flow (FB)
-- Go (Google)
-- Swift (Apple)
-
-
-
-関連する発表
------
-
-> Ruby3 Typing
-> Yukihiro "Matz" Matsumoto @yukihiro_matz
-
-
-LINKS
------
-
-- http://rubykaigi.org/2016/schedule/
-- http://togetter.com/li/1021897
-- http://memo.goodpatch.co/2016/09/rubykaigi-2016-report-ruby3-typing/
-
-s
