@@ -2,26 +2,39 @@
 JRubyに関する紹介
 =====
 
-Oracleの人の発表がいくつかありました。
-JRuby界隈では、どのように並列性を実現したのか。
+RubyKaigi2016で、JRubyのとっている手法について、Oracleの人からの発表がいくつかありました。
 
 
-
-GraalVM
+関連文書
 -----
 
+- http://rubykaigi.org/2016/presentations/pitr_ch.html
+- http://rubykaigi.org/2016/presentations/nirvdrum.html
+- http://rubykaigi.org/2015/presentations/nirvdrum.html
+- https://github.com/jruby/jruby/wiki/Truffle
+- http://www.spinute.org/ruby/gsoc2016/japanese.html
 
 
+Graalプロジェクト
+-----
 
-Truffle Ropes
+- Graal
+  - GraalVM : Javaが使っているLLVM
+  - Truffle
+    - Ropes
+
+Ropes
 -----
 
 Rubyでは、Stringは２つの目的で使われている。
-このうち、Sequence of Characters のほうを改善する機能。
 
 - sequence of characters
 - Byte buffer
 
+
+このうち、Sequence of Characters に異なるアプローチを用意して、改善をはかったもの。
+RopesはStringの内部構造にバランス木を採用し、高速化をはかる。
+代わりに、長さ検査、IOへの出力速度が落ちる。
 
 - O(1) operation
   - Immutable
@@ -30,12 +43,4 @@ Rubyでは、Stringは２つの目的で使われている。
   - shares memory by building new trees with existing nodes
 - `String#+`, `String#<<` など、40倍〜130倍高速になる。
 - `String#bytesize`,`String#size` など、17倍〜100倍低速になる。
-
-
-
-参考文献
-=====
-
-- https://github.com/jruby/jruby/wiki/Truffle
-- http://www.spinute.org/ruby/gsoc2016/japanese.html
 
